@@ -4,21 +4,15 @@ public class Hero {
 	
 	int hp;
 	String name;
+	static int money;
 	Sword sword;
 	
 	void attack() {
 		System.out.println(this.name +"攻撃をした!");	
 		System.out.println("敵に５ポイントのダメージを与えて!");
 	}
-	Hero(String name) {
-		this.hp = 100;
-		this.name = name;
+	static void setRandomMoney() {
+		Hero.money = (int) (Math.random() * 1000);
 	}
-	Hero (){
-		this("ダミー");
-	}
-	
-	
-	
 	
 }

@@ -1,12 +1,17 @@
 package Main;
 
 public class Hero {
-	private String name;
-	private int hp;
-	// ゲッターメソッドで呼び出しをするしている
-	public String getName() {
-		return this.name;
-	}
+	private String name = "ミナト";
+	private int hp = 100;
+	Sword sword;
+	static int money;
+	
+	// ゲッターメソッドHPを呼び出している。privateの為
+	public int getHp() {return this.hp;}
+	// セッターメソッドHPを呼び出している。praivateの為
+	public void setHp(int hp) {this.hp = this.hp;}
+	// ゲッターメソッドで呼び出しをするしている。praivateの為
+	public String getName() {return this.name;}
 	//　セッターメソッドで呼び出しをしている
 	public void setName(String name) {
 		if (name == null) {
@@ -24,8 +29,9 @@ public class Hero {
 		this.name = name;
 	}
 	
-	Sword sword;
-	static int money;
+	public Hero() {
+		System.out.println("Heroのコンストラクターが動作しています");
+	}
 	
 	void bye() {
 		System.out.println("勇者は別れを告げた");
@@ -38,18 +44,16 @@ public class Hero {
 		this.hp = -100;
 		System.out.println(this.name + "は眠って回復した！");
 	}
-	public void attack(Matango m) {
-		System.out.println(this.name +"攻撃をした!");	
-		System.out.println("敵に５ポイントのダメージを与えて!");
-		System.out.println("お化けキノコ" + m + "から２ポイントの反撃を受けた");
-		
-		this.hp -=2;
-		if (this.hp <=0) {
-			this.die();
-		}
+	
+	//攻撃
+	public void attack(Matango m){
+		System.out.println(this.name + "は，攻撃した！");
+		m.hp -= 5;
+		System.out.println(this.name + "は，敵に5ポイントのダメージを与えた！");
 	}
-	
-	
+	public void run() {
+		System.out.println(this.name + "は逃げ出した");
+	}
 	static void setRandomMoney() {
 		Hero.money = (int) (Math.random() * 1000);
 	}

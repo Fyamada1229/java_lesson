@@ -3,7 +3,7 @@ package Main;
 public class Matango{
 		// フィールド
 		int hp = 50;
-		private char suffix;
+		char suffix;
 		// コンストラクタ
 		public Matango (char suffix){
 			this.suffix = suffix;

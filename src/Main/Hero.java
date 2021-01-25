@@ -1,6 +1,6 @@
 package Main;
 
-public class Hero {
+public class Hero extends Character {
 	private String name = "ミナト";
 	private int hp = 100;
 	Sword sword;
@@ -48,8 +48,8 @@ public class Hero {
 	//攻撃
 	public void attack(Matango m){
 		System.out.println(this.name + "は，攻撃した！");
-		m.hp -= 5;
-		System.out.println(this.name + "は，敵に5ポイントのダメージを与えた！");
+		System.out.println(this.name + "は，敵に10ポイントのダメージを与えた！");
+		m.hp -= 10;
 	}
 	public void run() {
 		System.out.println(this.name + "は逃げ出した");

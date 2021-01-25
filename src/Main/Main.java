@@ -4,6 +4,8 @@ package Main;
 public class Main {
 	
 	public static void main(String[] arge) {
-		Weapon w = new Weapon();
+		Character c = new Character();
+		Matango m = new Matango('A');
+		c.attack(m);
 	}
 }

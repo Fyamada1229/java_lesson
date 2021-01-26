@@ -1,7 +1,7 @@
 package Main;
 
 
-public class Character {
+public abstract class Character {
 	
 	String name;
 		int hp;
@@ -10,8 +10,6 @@ public class Character {
 		System.out.println(this.name + "は逃げました");
 	}
 	//戦う
-	public void attack(Matango m) {
-		
-	}
-
+	public abstract void attack(Matango m);
+	
 }

@@ -5,7 +5,7 @@ public class Matango{
 		int hp = 50;
 		char suffix;
 		// コンストラクタ
-		public Matango (char suffix){
+		public Matango (char suffix){ 
 			this.suffix = suffix;
 		}
 		// メソッド

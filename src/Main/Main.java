@@ -1,18 +1,18 @@
 package Main;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Main {
 	
-	public static void main(String[] arge) {
-		//本日の日時を表示する
-		Date now = new Date();
-		SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		//指定日の文字列を解析しDate型として得る
-		Date d = f.parse("2011/09/22 01:23:45");
-		System.out.println(d);
-		
-		
+	public static void main(String[] args) {
+		Hero h1 = new Hero();
+		h1.name = "ミナミ";
+		h1.hp = 100;
+		Hero h2 = new Hero();
+		h2.name = "ミナト";
+		h2.hp = 100;
+		if(h1.equals(h2) == true) {
+			System.out.println("同じ内容になります");
+		} else {
+			System.out.println("同じ内容ではありません");
+		}
 	}
 }

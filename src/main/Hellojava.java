@@ -4,20 +4,12 @@ public class Hellojava {
 
 	public static void main(String[] args) {
 		
+		Student2 s = new Student2("山田大", 31);
+		s.introduction();
 		
-		int [] ary = {10,20,30,44,55,101};
+		s.setName("本田");
+		s.setAge(10);
 		
-		for (int i: ary) {
-			if(( i % 2 )==0) {
-				System.out.println("配列の値は" + i);
-			} else {
-				System.out.println("奇数です" + i);
-			}
+		s.introduction();
 		}
-		
-		
-		
-		
-		}		
-		
 }

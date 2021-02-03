@@ -31,7 +31,7 @@ public class Student2 {
 		if (age >= 0) {
 			this.age = age;
 		} else {
-			System.out.println("ーです");
+			System.out.println("マイナスになっています");
 		}
 	}
 	//自己紹介

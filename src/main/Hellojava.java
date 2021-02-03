@@ -4,12 +4,10 @@ public class Hellojava {
 
 	public static void main(String[] args) {
 		
-		Student2 s = new Student2("山田大", 31);
-		s.introduction();
+		Student3 s3 = new Student3("山田大", 31, 3, 2);
+		s3.setAeg(18);
+		s3.setName("yamada");
+		s3.introduction();
 		
-		s.setName("本田");
-		s.setAge(10);
-		
-		s.introduction();
 		}
 }

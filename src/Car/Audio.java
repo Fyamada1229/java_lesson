@@ -1,5 +1,7 @@
 package Car;
 
-public class Audio {
+public interface Audio {
+	
+	void play();
 
 }

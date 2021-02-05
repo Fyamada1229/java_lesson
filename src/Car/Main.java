@@ -21,5 +21,9 @@ public class Main {
 		sc.brake();
 		speed = sc.getSpeed();
 		System.out.println("現在の速度は" + speed + "です");
+		
+		sc.accele(100);
+		speed = sc.getSpeed();
+		System.out.println("現在の速度は" + speed +"です");
 	}
 }

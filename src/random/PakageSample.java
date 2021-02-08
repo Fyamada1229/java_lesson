@@ -80,11 +80,11 @@ public class PakageSample {
 		intmap.put("value2", 10);
 		intmap.put("value3", 30);
 		
-		System.out.println(intmap.isEmpty("value1"));
 		for (int i = 0; i <= intmap.size(); i++) {
-			System.out.println(intmap.get("value" + i));
-			
+			System.out.println(intmap.get("value" + i));	
 		}
+		
+		
 		
 		
 		

@@ -4,10 +4,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		BankAccunt ba = new BankAccunt("川崎", "8745", "1111");
 		
-		for (int i = 100; i < 130; i += 10) {
-			System.out.println("i=" + i);
-		}
+		ba.changePassword("8745", "5155");
+		ba.printInfomation("5151");
 	}
 
 }

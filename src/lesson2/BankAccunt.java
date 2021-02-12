@@ -21,11 +21,11 @@ public class BankAccunt {
 			System.out.println("パスワードが違い変更が出来ませんでした");
 		}
 	}
-	
+
 	public void printInfomation(String password) {
 		if (this.password.equals(password)) {
 			System.out.println("支店番号は" + bankCode);
-			System.out.println("口座番号は"+ bankNumber);
+			System.out.println("口座番号は" + bankNumber);
 		} else {
 			System.out.println("パスワードが違います");
 		}

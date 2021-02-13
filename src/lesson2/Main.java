@@ -10,6 +10,7 @@ public class Main {
 		ba.printInfomation("5155");
 		ba.printInfomation(null);
 		
+		
 	}
 
 }

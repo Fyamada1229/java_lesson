@@ -5,13 +5,13 @@ public class main {
 	public static void main(String[] args) {
 
 		try {
-			// コマンドライン引数を読み込み
+			//コマンドライン引数を読み込み
 			System.out.println("コマンドライン引数を読み込み");
 			String arg0 = args[0];
-			// 整数xに変換
+			//整数xに変換
 			System.out.println("整数xに変換");
 			int x = Integer.parseInt(arg0);
-			// 割り算を実行
+			//割り算を実行
 			System.out.println("割り算を実行");
 			int y = 1000 / x;
 			System.out.println("1000/x = " + y);

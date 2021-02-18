@@ -1,17 +1,18 @@
 package human;
 
 public class Human {
-	
+
 	private String name;
 	private int age;
-	
 	//アクセス ゲットメソッド
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	//アクセス セットメソッド
 	public int getAeg() {
 		return age;

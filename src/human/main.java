@@ -8,7 +8,6 @@ public class main {
 		h.setAge(31);
 		System.out.println("Humanクラスになります");
 		h.speak();
-		
 		System.out.println("Studentクラスになります");
 		Student s = new Student();
 		s.setName("本田隼人");
@@ -23,5 +22,4 @@ public class main {
 		System.out.println("子クラスのspeakメソッドを実行する");
 		h2.speak();
 	}
-
 }
